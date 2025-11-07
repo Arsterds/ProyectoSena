@@ -1,0 +1,183 @@
+/* Estilos generales */
+body {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+   background: linear-gradient(90deg, #d17f3be5, #d17f3be5);
+  color: #f3f3fa;}
+/* Header */
+header {
+  background: linear-gradient(90deg,  #443f3a, #4b2400);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+
+header h1 {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+header h1:hover {
+  transform: scale(1.1);
+}
+
+/* Navegación */
+nav a {
+  margin: 0 15px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+ /*soporte*/
+button {
+  background: #2196F3;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0b79d0;
+}
+.contenedor{
+  text-align: left;
+  height: 1px;
+  width: 150px
+}
+
+.contenedor1{
+  text-align: center;
+  height: 1;
+ width: 1;
+  
+}
+
+.contenedor5{
+  text-align: right;
+height: 1px;
+  width: 1850px;
+}
+
+
+
+/* Animaciones */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animado {
+  color: red;
+  font-weight: bold;
+  animation: parpadeo 1.5s infinite;
+}
+
+@keyframes parpadeo {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
+        label {
+          color: green;
+        }
+      
+
+/* Formulario */
+
+/* Contenedor en fila */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Cada campo ocupa la mitad */
+.half-width {
+  width: 48%;
+}
+
+/* Mismo estilo para select e input */
+select,
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Adaptable para pantallas pequeñas */
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+  .half-width {
+    width: 100%;
+  }
+}
+
+
+
+form {
+  background: #ffffff;
+  padding: 15px;
+  margin: auto;
+  width: 40%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px rgb(243, 190, 141);
+}
+select {
+  width: 95%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+
+
+input, textarea {
+  width: 95%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #0b79d0;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0b79d0;
+}
+
+/* Footer */
+footer {
+  
+  text-align: center;
+  background: #000000;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+}
